@@ -47,15 +47,15 @@ function Get-ScheduledTaskDetail {
 #endregion Functions
 
 #region Variables for Working with Flex Environments
-try {
-    $tenantId = (op read "op://6vui2id7esaeer32cfd65lftf4/Flex Prod M365 Tenant/TenantID")
-    $defEnv = (op read "op://6vui2id7esaeer32cfd65lftf4/Flex Prod M365 Tenant/PowerPlatform-DefEnv")
-    $devEnv = (op read "op://6vui2id7esaeer32cfd65lftf4/Flex Prod M365 Tenant/PowerPlatform-O365GovDevEnv")
-    $prodEnv = (op read "op://6vui2id7esaeer32cfd65lftf4/Flex Prod M365 Tenant/PowerPlatform-O365GovProdEnv")
-}
-catch {
-    Write-Host "An error ocurred while trying to read the Flex environment variables" -ForegroundColor Red
-}
+# try {
+#     $tenantId = (op read "op://6vui2id7esaeer32cfd65lftf4/Flex Prod M365 Tenant/TenantID")
+#     $defEnv = (op read "op://6vui2id7esaeer32cfd65lftf4/Flex Prod M365 Tenant/PowerPlatform-DefEnv")
+#     $devEnv = (op read "op://6vui2id7esaeer32cfd65lftf4/Flex Prod M365 Tenant/PowerPlatform-O365GovDevEnv")
+#     $prodEnv = (op read "op://6vui2id7esaeer32cfd65lftf4/Flex Prod M365 Tenant/PowerPlatform-O365GovProdEnv")
+# }
+# catch {
+#     Write-Host "An error ocurred while trying to read the Flex environment variables" -ForegroundColor Red
+# }
 #endregion Variables for Working with Flex Environments
 
 #region Chocolatey Profile
