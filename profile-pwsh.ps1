@@ -1,7 +1,7 @@
 # PowerShell (7 or later) personal profile of Mario Contreras
 
 #region Call common profile
-(New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/Nazul/nazul-powershell-profile/refs/heads/main/profile-common.ps1') | Invoke-Expression
+Invoke-Expression (Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Nazul/nazul-powershell-profile/refs/heads/main/profile-common.ps1').Content
 #endregion
 
 #region GitHub Copilot
