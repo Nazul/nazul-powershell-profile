@@ -85,6 +85,10 @@ Register-ArgumentCompleter -Native -CommandName az -ScriptBlock {
 }
 #endregion Azure CLI Tab Completition
 
+#region 1Password CLI Tab Completition
+op completion powershell | Out-String | Invoke-Expression
+#endregion 1Password CLI Tab Completition
+
 #region For Windows Terminal
 Import-Module Terminal-Icons
 Import-Module posh-git
