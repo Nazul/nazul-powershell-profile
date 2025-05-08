@@ -88,4 +88,6 @@ oh-my-posh init pwsh --config (Join-Path $env:OneDriveConsumer '\Dev\src\oh-my-p
 Invoke-Expression (&scoop-search --hook)
 #endregion Scoop
 
+fastfetch
+
 # EOF
