@@ -1,7 +1,7 @@
 # PowerShell (7 or later) personal profile of Mario Contreras
 
 #region Call common profile
-Invoke-Expression (Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Nazul/nazul-powershell-profile/refs/heads/main/profile-common.ps1').Content
+. (Join-Path $env:OneDriveConsumer 'Dev\src\nazul-powershell-profile\profile-common.ps1')
 #endregion
 
 #region GitHub Copilot
